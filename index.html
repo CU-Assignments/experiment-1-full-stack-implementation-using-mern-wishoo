@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Login Section -->
+        <div id="login-section" class="form">
+            <h2>Login</h2>
+            <input type="email" id="login-email" placeholder="Email" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button onclick="login()">Login</button>
+            <p>Don't have an account? <a href="signup.html">Signup here</a></p>
+        </div>
+
+        <!-- Message Section (Initially Hidden) -->
+        <div id="welcome-section" class="form hidden">
+            <h1 id="welcome-message"></h1>
+            <p id="status-message"></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
